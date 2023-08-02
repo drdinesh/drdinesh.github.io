@@ -9,6 +9,8 @@
 		<title>Dinesh Kumar, PhD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -34,20 +36,40 @@
 
 							<!-- Banner -->
 								<section id="banner">
-									<div class="content">
-										<header>
-											<h2>Hi, I’m Dr. Dinesh<br />
-											Kumar</h2>
+									
+									<div class="w3-content w3-section" style="max-width:900px">
+									<header>
+											<h2>Hi, I’m Dr. Dinesh Kumar</h2>
 											<p>Welcome to my Digital Space</p>
-										</header>
+									</header>
 										<p>An insightful performer with proven expertise in devising and effectuating policies aimed at ensuring smooth running of operations and execution of academic, research and administration tasks within the professional college/University premises; possesses potential for distinctive achievement through strategy, innovation, implementation and control. Currently working as a Head of Information Technology Department with DAVIET and having 18 years rich cross-functional experience in continuously delivering in the capacity of teacher and researcher.</p>
-										<!-- <ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul> -->
+										<img class="mySlides w3-animate-fading" src="images/p22.jpg" style="width:100%">
+										<img class="mySlides w3-animate-fading" src="images/p23.jpg" style="width:100%">
+										<img class="mySlides w3-animate-fading" src="images/p15.jpg" style="width:100%">
+										<img class="mySlides w3-animate-fading" src="images/p16.jpg" style="width:100%">
 									</div>
-									<span class="image object">
+
+									<script>
+									var myIndex = 0;
+									carousel();
+
+									function carousel() {
+									  var i;
+									  var x = document.getElementsByClassName("mySlides");
+									  for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";  
+									  }
+									  myIndex++;
+									  if (myIndex > x.length) {myIndex = 1}    
+									  x[myIndex-1].style.display = "block";  
+									  setTimeout(carousel, 9000);    
+									}
+									</script>
+
+								<!--	<span class="image object">
 										<img src="images/p12.jpg" alt="" />
-									</span>
+									</span> -->
+									
 								</section>
 
 							<!-- Section -->
@@ -174,6 +196,7 @@
 												<li><a href="nationalj.html">National Journals</a></li>
 												<li><a href="internationalc.html">International Conferences</a></li>
 												<li><a href="nationalc.html">National Conferences</a></li>
+												<li><a href="bookchap.html">Book Chapters</a></li>
 											</ul>
 										</li>
 										<li><a href="outreach.html">Outreach</a></li>
